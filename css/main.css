@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
 
 /* Set custom variables here */
+:root{
+  --bs-primary: #2E483A;
+  --bs-light: #F6F3ED;
+  --bs-primary-rgb: 46, 72, 58;
+}
 
-
-
+.btn .btn-lg{
+  background-color: #2E483A;
+  color: #E4E6DB;
+}
 
 
 .navbar-brand {
   color: #F6F3ED;
 }
 
+h3 {
+  padding-top: 20px;
+}
 body {
   font-family: "Sarala", sans-serif;
 }
@@ -25,23 +35,30 @@ h1, h2, h3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: 50px;
 }
-
+figure img{
+  border-radius: 50%;
+}
 #hero .d-flex {
   height: 800px;
 }
 
 #cta {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cta-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 100px;
 }
 
 #cta .d-flex {
   height: 400px;
 }
 
+footer {
+  padding: 20px;
+}
 section:not(#hero):not(#cta){
   padding: 60px 0;
 }
